@@ -5,10 +5,10 @@ import argparse
 
 
 def save_dataset(symbol, time_window):
-    credentials = json.load(open('creds.json', 'r'))
-    api_key = credentials['av_api_key']
+    # credentials = json.load(open('creds.json', 'r'))
+    # api_key = credentials['av_api_key']
     print(symbol, time_window)
-    ts = TimeSeries(key=api_key, output_format='pandas')
+    ts = TimeSeries(key='OQYZKE9TEDO3AIQFOQYZKE9TEDO3AIQF', output_format='pandas')
     if time_window == 'intraday':
         data, meta_data = ts.get_intraday(
             symbol='MSFT', interval='1min', outputsize='full')

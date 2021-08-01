@@ -25,6 +25,7 @@ A stock trading bot that uses machine learning to make price predictions.
 
 1. Clone the repo
 2. Pip install the requirements `pip install -r requirements.txt`
+2.1 Pip install the requirements `py -m pip install -r requirements.txt`
 3. Save the stock price history to a csv file `python save_data_to_csv.py --help`
 4. Edit one of the model files to accept the symbol you want
 5. Edit model architecture
